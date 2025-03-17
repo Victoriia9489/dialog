@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     closeBtn.addEventListener("click", () => {
-        modal.closest();
+        modal.close();
     });
 
     modal.addEventListener("click", (e) => {
@@ -19,7 +19,7 @@ if (
     event.clientY < rect.top ||
     event.clientY > rect.bottom
 ) {
-    modal.closest();
+    modal.close();
 }
     });
 
